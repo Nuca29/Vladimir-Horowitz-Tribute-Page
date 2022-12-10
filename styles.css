@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.5;
+  color: #333;
+}
+
+#main {
+  background-color: #d8d8d8;
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#title {
+  font-family: "Abril Fatface", cursive;
+}
+
+#main-header p {
+  margin: 1em auto 1.5em auto;
+}
+
+#quotes p {
+  font-family: "Satisfy", cursive;
+}
+
+#img-div {
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#img-div img {
+  max-width: 100%;
+  height: auto;
+}
+
+#img-div #img-caption {
+  margin: auto 0 auto 0;
+  font-size: 1.2rem;
+}
+
+#tribute-info #headline {
+  margin: 5rem 0 2rem 0;
+}
+
+#tribute-info ul {
+  max-width: 550px;
+  margin: 0 auto 4.5rem auto;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1.3rem;
+}
+
+#tribute-info li {
+  margin: 16px 0;
+}
+
+#quotes {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  font-size: 1.4rem;
+}
+
+#quotes .quote-rachmaninoff,
+#quotes .quote-schonberg,
+#quotes .quote-horowitz {
+  max-width: 100%;
+  border: 2px solid #b2b2b2;
+  padding: 20px;
+  margin: auto 0 auto 30px;
+}
+
+cite {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+#quotes-and-image {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+}
+
+aside {
+  min-height: 683px;
+}
+
+aside img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#tribute-info #additional-information {
+  font-family: inherit;
+  font-size: 1.2rem;
+  margin-top: 60px;
+  background-color: #eee;
+  border-radius: 5px;
+  word-spacing: 6px;
+  opacity: 0.8;
+}
+
+@media (max-width: 1155px) {
+  #quotes-and-image {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #quotes {
+    max-width: 100%;
+  }
+
+  #quotes .quote-rachmaninoff,
+  #quotes .quote-schonberg,
+  #quotes .quote-horowitz {
+    margin-bottom: 20px;
+  }
+
+  #tribute-info #additional-information {
+    margin-top: 0;
+  }
+}
